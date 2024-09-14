@@ -1,0 +1,111 @@
+/*#region Body and Background*/
+body {
+    background-color: thistle;
+    border: 2px solid gray;
+    border-radius: 16px;
+    font-family: verdana;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 256px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+html {
+    /*background: radial-gradient(circle, skyblue, skyblue 50%, lightcyan 50%, skyblue);*/
+    background-color: black;
+    background-size: 8px 8px;
+}
+/*#endregion*/
+
+/*#region Nav*/
+nav {
+    width: 380px;
+    text-align: center;
+    margin: auto;
+}
+nav ul {
+    list-style-type: none;
+    background-color: #B577B5;
+    border: 4px solid #111111;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 16px;
+}
+nav ul li {
+    display: inline;
+    border-right: 2px solid #111111;
+    padding-right: 8px;
+    padding-left: 8px;
+    
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #111111;
+}
+nav ul li a.active {
+    color: #606060;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/*#endregion*/
+
+/*#region Flex*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+.flex-container div {
+    padding: 5px;
+    border: 4px solid #111111;
+    border-radius: 25px;
+    margin: 5px;
+}
+.flex-container div h2 {
+    text-align: center;
+}
+div.special-border {
+    border: 4px dashed indigo;
+}
+/*#endregion*/
+
+h1 {
+    color: blue;
+    font-size: 300%;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    color: #111111;
+    font-size: 120%;
+}
+
+div.shifted {
+    margin-left: 10px;
+    border-left: 2px solid indigo;
+    padding-left: 20px;
+    height: auto;
+}
+
+iframe {
+    margin-top: 10px;
+    border: 2px solid #111111;
+    border-radius: 10px;
+}
+
+button {
+    display: inline;
+    border: none;
+    background-color: transparent;
+}
