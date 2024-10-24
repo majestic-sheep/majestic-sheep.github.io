@@ -1,7 +1,22 @@
+@property --highlight-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #02a6f7;
+}
+@property --dark-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #001d2b;
+}
+@property --light-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #94d6f7;
+}
 /*#region Body and Background*/
 body {
-    background-color: thistle;
-    border: 2px solid gray;
+    background-color: var(--light-color);
+    border: 2px solid var(--dark-color);
     border-radius: 16px;
     font-family: verdana;
     margin-left: auto;
@@ -14,9 +29,14 @@ body {
     padding-right: 24px;
 }
 html {
-    /*background: radial-gradient(circle, skyblue, skyblue 50%, lightcyan 50%, skyblue);*/
-    background-color: black;
-    background-size: 8px 8px;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg, var(--dark-color) 25%, transparent 25%), 
+        linear-gradient(225deg, var(--dark-color) 25%, transparent 25%), 
+        linear-gradient(45deg, var(--dark-color) 25%, transparent 25%), 
+        linear-gradient(315deg, var(--dark-color) 25%, var(--light-color) 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
 }
 /*#endregion*/
 
@@ -28,15 +48,15 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    background-color: #B577B5;
-    border: 4px solid #111111;
+    background-color: var(--light-color);
+    border: 4px solid var(--dark-color);
     border-radius: 10px;
     font-weight: bold;
     padding: 16px;
 }
 nav ul li {
     display: inline;
-    border-right: 2px solid #111111;
+    border-right: 2px solid var(--dark-color);
     padding-right: 8px;
     padding-left: 8px;
     
@@ -46,10 +66,11 @@ nav ul li:last-child {
 }
 nav ul li a {
     text-decoration: none;
-    color: #111111;
+    color: var(--dark-color);
+    font-style: normal;
 }
 nav ul li a.active {
-    color: #606060;
+    color: var(--highlight-color);
 }
 nav ul li a:hover {
     text-decoration: underline;
@@ -65,7 +86,7 @@ nav ul li a:hover {
 }
 .flex-container div {
     padding: 5px;
-    border: 4px solid #111111;
+    border: 4px solid var(--dark-color);
     border-radius: 25px;
     margin: 5px;
 }
@@ -73,34 +94,39 @@ nav ul li a:hover {
     text-align: center;
 }
 div.special-border {
-    border: 4px dashed indigo;
+    border: 4px dashed var(--highlight-color);
 }
 /*#endregion*/
 
 h1 {
-    color: blue;
+    color: var(--highlight-color);
     font-size: 300%;
 }
 
 h2 {
-    color: blue;
+    color: var(--highlight-color);
 }
 
 p {
-    color: #111111;
+    color: var(--dark-color);
     font-size: 120%;
+}
+
+a {
+    color: var(--highlight-color);
+    font-style: italic;
 }
 
 div.shifted {
     margin-left: 10px;
-    border-left: 2px solid indigo;
+    border-left: 2px solid var(--highlight-color);
     padding-left: 20px;
     height: auto;
 }
 
 iframe {
     margin-top: 10px;
-    border: 2px solid #111111;
+    border: 2px solid var(--dark-color);
     border-radius: 10px;
 }
 
