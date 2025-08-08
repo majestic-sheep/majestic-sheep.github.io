@@ -24,7 +24,7 @@
     <ul>
         <li><b>Java</b></li>
         <li>C++</li>
-        <li>C#</li>
+        <li><b>C#</b></li>
         <li><b>GML</b></li>
         <li>TI Basic</li>
         <li>Lua</li>
@@ -50,22 +50,6 @@
         </b>
     </p>
 
-    <!--#region This Website-->
-    <h1>This Website: HTML, CSS, and JavaScript</h1>
-    <p>
-        This website was quite hard to create. It required me to learn three computer languages, git, and github, all at
-        the same time, with no formal guidance.
-    </p>
-    <p>
-        I created a GitHub repository for this website, linked to my first git repository that actually helped me in my
-        development of a project. The ones "before" it were merely uploads of long-since completed projects. Find the repo
-        <a href="https://github.com/majestic-sheep/Website"
-           target="_blank"
-           rel="noopener noreferrer">
-            here
-        </a>.
-    </p>
-    <!--#endregion-->
     <!--#region Java-->
     <h1>Java</h1>
     <p>
@@ -79,12 +63,21 @@
         prefer statically typed over dynamically typed languages, though. I also found the object-oriented nature of the
         language intuitive and helpful.
     </p>
-    <h2>Electron Configuration Calculator</h2>
-    <p>
-        After I had learned the basics, my first program in Java was an electron configuration calculator. I did this mainly
-        to study for Chemistry I. It worked, because after a whole year, I still know how to determine an electron
-        configuration by heart.
-    </p>
+    <!--#region Electron Configuration Calculator-->
+    <h2>
+        <button type="button" onclick="dropToggle('electronContent', 'electronButtonImage')">
+            <img src="gui/triangle.png" id="electronButtonImage" style="width: 10px; transform: rotate(90deg)">
+        </button>
+        Electron Configuration Calculator
+    </h2>
+    <div class="shifted" id="electronContent" style="display: none;">
+        <p>
+            After I had learned the basics of Java, my first program was an electron configuration calculator. I did this mainly
+            to study for Chemistry I. It worked, because after a whole year, I still know how to determine an electron
+            configuration by heart.
+        </p>
+    </div>
+    <!--#endregion-->
     <!--#endregion-->
     <!--#region C# with Unity-->
     <h1>C# with Unity</h1>
@@ -110,15 +103,15 @@
             <a href="https://www.youtube.com/watch?v=M4pXKGV5NbY&list=PLx7AKmQhxJFajrXez-0GJgDlKELabQQHT&index=1"
                target="_blank"
                rel="noopener noreferrer">
-               this Youtube series
+                this Youtube series by Ketra Games
             </a>
             as a helpful reference for many features of the game, including the basics of player, bullet, and enemy movement
-            and health. It taught me how to use GUI elements, scene management, and animations. Once I had learned the 
-            basics, I used the principles the tutorial taught me to largely independently develop 3 new enemy types, a 
-            detailed inventory system, weapon types, weapon collectables, a level system, and a better enemy spawning 
-            system.
+            and health. It taught me how to use GUI elements, scene management, and animations. Once I had learned how to 
+            use Unity, I developed 3 new enemy types, a detailed inventory system, weapon types, weapon collectables, a 
+            level system, and a better enemy spawning system.
         </p>
     </div>
+
     <!--#endregion-->
     <!--#endregion-->
     <!--#region Lua-->
@@ -189,6 +182,33 @@
         Lua. I very much liked GML because of the built-in systems it had, and I found the syntax easy to use and
         understand while not being too shallow as to be boring.
     </p>
+    <!--#region Gun Guy-->
+    <h2>
+        <button type="button" onclick="dropToggle('gunGuyContent', 'gunGuyButtonImage')">
+            <img src="gui/triangle.png" id="gunGuyButtonImage" style="width: 10px; transform: rotate(90deg)">
+        </button>
+        Gun Guy
+    </h2>
+    <div class="shifted" id="gunGuyContent" style="display: none;">
+        <strong>May 3rd, 2024</strong><br>
+        <p>
+            A very creatively named game, "Gun Guy" was the last one I ever made with GameMaker Studio before moving on to
+            Unity. I moved away from GML because I realized that I had no ability to compile GameMaker Studio games to
+            executables, as that requires an expensive liscence. Unfortunately, that means I can't share the ability to play
+            this game on this website. The best I can give is a YouTube video about the gameplay.
+        </p>
+        <iframe src="https://www.youtube.com/embed/TQxUxli6pgI?autoplay=0&controls=1"
+                title="YouTube video player"
+                allowtransparency="true"
+                width="485"
+                height="402"
+                frameborder="0"
+                scrolling="no"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </div>
+    <!--#endregion-->
     <!--#endregion-->
     <!--#region Scratch-->
     <h1>Scratch</h1>

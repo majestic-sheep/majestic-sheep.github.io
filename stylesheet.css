@@ -6,12 +6,12 @@
 @property --dark-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #001d2b;
+    initial-value: #000a0f;
 }
 @property --light-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #94d6f7;
+    initial-value: #c7ebfc;
 }
 /*#region Body and Background*/
 body {
@@ -35,7 +35,7 @@ html {
         linear-gradient(45deg, var(--dark-color) 25%, transparent 25%), 
         linear-gradient(315deg, var(--dark-color) 25%, var(--light-color) 25%);
     background-position: 10px 0, 10px 0, 0 0, 0 0;
-    background-size: 10px 10px;
+    background-size: 20px 20px;
     background-repeat: repeat;
 }
 /*#endregion*/
