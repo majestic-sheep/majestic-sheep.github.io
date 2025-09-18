@@ -370,6 +370,14 @@ div.shifted {
     height: auto;
 }
 
+div.modal-iframe iframe {
+    border-radius: 12px;
+    overflow: hidden;
+    transform-origin: center;
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms;
+    box-shadow: 0 6px 18px var(--shadow-light);
+}
+
 button {
     display: inline;
     border: none;
