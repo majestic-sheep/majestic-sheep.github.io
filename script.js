@@ -1,4 +1,4 @@
-// JavaScript source code
+
 function dropToggle(id, buttonImage) {
     let ele = document.getElementById(id)
     let img = document.getElementById(buttonImage)
