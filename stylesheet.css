@@ -365,15 +365,9 @@ nav ul li a:hover {
 
 div.shifted {
     margin-left: 10px;
-    border-left: 2px solid var(--highlight-color);
+    border-left: 2px solid var(--color-accent);
     padding-left: 20px;
     height: auto;
-}
-
-iframe {
-    margin-top: 10px;
-    border: 2px solid var(--dark-color);
-    border-radius: 10px;
 }
 
 button {
