@@ -33,6 +33,9 @@
   --grad-card-start: rgba(143,174,104,0.05);
   --grad-card-end: rgba(0,0,0,0.08);
 
+  --grad-card-start-special: rgba(121, 219, 0, 0.511);
+  --grad-card-end-special: rgba(133, 171, 86, 0.186);
+
   --grad-arrow-start: var(--color-accent);
   --grad-arrow-end: var(--color-accent-alt);
 
@@ -123,6 +126,37 @@ nav ul li a.active {
 nav ul li a:hover {
     text-decoration: underline;
 }
+/*#endregion*/
+
+/*#region Flex*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+.flex-container div h2 {
+    text-align: center;
+}
+.flex-container div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+}
+.flex-container div.special-border {
+  border-radius: 12px;
+  overflow: hidden;
+  transform-origin: center;
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms;
+  box-shadow: 0 6px 18px var(--shadow-light);
+  background: linear-gradient(45deg, var(--grad-card-start-special), var(--grad-card-end-special));
+}
+/*
+.flex-container div:not(.special-border) {
+  background: linear-gradient(180deg, var(--grad-card-start), var(--grad-card-end));
+}
+*/
 /*#endregion*/
 
 .container {
