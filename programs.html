@@ -19,72 +19,98 @@
 
     <h1>Programs</h1>
     <p>
-        My favorite hobby is programming. I have exposure with a wide variety of languages, with the languages I am most
-        proficient in bolded:
+        I've used <b>Java</b>, C++, <b>C#</b>, <b>GML</b>, TI Basic, Lua, <b>Python</b>, JavaScript, HTML, and CSS
+        (most proficient languages bolded)
     </p>
-    <ul>
-        <li><b>Java</b></li>
-        <li>C++</li>
-        <li><b>C#</b></li>
-        <li><b>GML</b></li>
-        <li>TI Basic</li>
-        <li>Lua</li>
-        <li><b>Python</b></li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
     <p>
-        If block programming languages are counted as "real" languages, I can add a few more to the list:
-    </p>
-    <ul>
-        <li>Scratch</li>
-        <li>Lego Mindstorms EV3</li>
-        <li>MCreator</li>
-    </ul>
-    <p>
-        <b>
-            <u>
-                For each game or project, click the header link to download or play, or open the dropdown
-                section for more information.
-            </u>
-        </b>
+        Of block programming languages, I've used Scratch, LEGO Mindstorms EV3, and MCreator
     </p>
 
     <!--#region C# with Unity-->
     <h1>C# with Unity</h1>
     <p>
-        I very much liked Unity. I think the syntax of C# and built-in systems offered by Unity make this my favorite
-        system, though I haven't gotten arround to using it as much as I would've liked to.
+        I very much like Unity. The syntax of C# and built-in systems offered by Unity make this my favorite
+        system.
     </p>
-    <!--#region Spooker Shooter-->
-    <h2>
-        <button type="button" onclick="dropToggle('spookerShooterContent', 'spookerShooterButtonImage')">
-            <img src="gui/triangle.png" id="spookerShooterButtonImage" style="width: 10px; transform: rotate(90deg)">
-        </button>
-        <a href="https://majestic-sheep.itch.io/spooker-shooter"
-           target="_blank"
-           rel="noopener noreferrer">
-            Spooker Shooter
-        </a>
-    </h2>
-    <div class="shifted" id="spookerShooterContent" style="display: none;">
-        <strong>October 22, 2024</strong><br>
-        <p>
-            This game was a learning project for me. I used
-            <a href="https://www.youtube.com/watch?v=M4pXKGV5NbY&list=PLx7AKmQhxJFajrXez-0GJgDlKELabQQHT&index=1"
-               target="_blank"
-               rel="noopener noreferrer">
-                this Youtube series by Ketra Games
-            </a>
-            as a helpful reference for many features of the game, including the basics of player, bullet, and enemy movement
-            and health. It taught me how to use GUI elements, scene management, and animations. Once I had learned how to 
-            use Unity, I developed 3 new enemy types, a detailed inventory system, weapon types, weapon collectables, a 
-            level system, and a better enemy spawning system.
-        </p>
-    </div>
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card" data-title="Fish Bobble">
+        <img class="card-img" src="pictures/fish-bobble.png" alt="Fish Bobble picture">
+        <div class="card-body">
+          <div class="card-text">
+            <h2 class="name">Fish Bobble</h2>
+            <p class="short">Arcade-style game made in a week at NHSGA</p>
+          </div>
+          <div class="card-meta">
+            <time class="date">date?</time>
+            <!--<a class="arrow" href="https:SLASHSLASHexample.com/mountains" target="_blank" rel="noopener">→</a>-->
+          </div>
+        </div>
+        <div class="full-content">
+          <p>
+            Fish Bobble is a game that I made with Team 7 at Carnegie Mellon University's National High School Game 
+            Academy. We were given a week to make our version of the arcade game Puzzle Bobble.
+          </p>
+          <p>
+            In Fish Bobble, you play as a pixel art fish protecting a sand castle: your home. Shoot bubbles at the
+            approaching clumps, matching sets of 3 to pop them! Look out for bombs!
+          </p>
+          <p>
+            I worked on the game after NHSGA as well. Once I remove all the bugs, I'll publish it on Itch.
+          </p>
+          <h3>The Team</h3>
+          <ul>
+            <li><b>Hannah Ying:</b> <i>Artist and Producer</i></li>
+            <li><b>Christopher Todd (me):</b> <i>Programmer</i></li>
+            <li><b>Eli Dew:</b> <i>Programmer</i></li>
+            <li><b>Gray Guenther:</b> <i>Artist</i></li>
+            <li><b>Cooper Panaro:</b> <i>Sound Design</i></li>
+          </ul>
+        </div>
+      </article>
 
-    <!--#endregion-->
+      <!-- Card 2 -->
+      <article class="card" data-title="Spooker Shooter">
+        <img class="card-img" src="pictures/spooker-shooter.png" alt="Spooker Shooter picture">
+        <div class="card-body">
+          <div class="card-text">
+            <h2 class="name">Spooker Shooter</h2>
+            <p class="short">Fight hordes of monsters using weapons, potions, and gadgets!</p>
+          </div>
+          <div class="card-meta">
+            <time class="date">10/22/2024</time>
+            <a class="arrow" href="https://majestic-sheep.itch.io/spooker-shooter" target="_blank" rel="noopener">→</a>
+          </div>
+        </div>
+        <div class="full-content">
+            <p>
+                This game was a learning project for me. I used
+                <a href="https://www.youtube.com/watch?v=M4pXKGV5NbY&list=PLx7AKmQhxJFajrXez-0GJgDlKELabQQHT&index=1"
+                target="_blank"
+                rel="noopener noreferrer">
+                    this Youtube series by Ketra Games
+                </a>
+                as a helpful reference for many features of the game, including the basics of player, bullet, and enemy movement
+                and health. It taught me how to use GUI elements, scene management, and animations. Once I had learned how to 
+                use Unity, I developed 3 new enemy types, a detailed inventory system, weapon types, weapon collectables, a 
+                level system, and a better enemy spawning system.
+            </p>
+            <p>
+                Press the arrow or 
+                <a href="https://majestic-sheep.itch.io/spooker-shooter" target="_blank" rel="noopener">follow this link</a>
+                to find the Itch page.
+            </p>
+            <h3>Features</h3>
+            <ul>
+                <li>4 weapon types</li>
+                <li>3 possible weapon modifiers</li>
+                <li>7 potion types</li>
+                <li>3 gadgets</li>
+                <li>4 monster types</li>
+            </ul>
+        </div>
+      </article>
+    </div>
     <!--#endregion-->
     <!--#region Java-->
     <h1>Java</h1>
@@ -130,51 +156,55 @@
     <p>
         On Roblox, my username is majestic_sheep3.
     </p>
-    <!--#region Terror Tower Wars-->
-    <h2>
-        <button type="button" onclick="dropToggle('terrorTowerWarsContent', 'terrorTowerWarsButtonImage')">
-            <img src="gui/triangle.png" id="terrorTowerWarsButtonImage" style="width: 10px; transform: rotate(90deg)">
-        </button>
-        <a href="https://www.roblox.com/games/17712262380/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Terror Tower Wars
-        </a>
-    </h2>
-    <div class="shifted" id="terrorTowerWarsContent" style="display: none;">
-        <strong>June 2, 2024</strong><br>
-        <p>
-            "Doomspire Brickbattle" is a free asset available on Roblox Studio. It is essentially a finished game, and thus
-            many have published the same game under different names that are all essentially copies of Doomspire
-            Brickbattle. I thought it would be good practice for me to do something similar, but I couldn't publish
-            publish someone else's work as my own. I created my own map similar to the Doomspires, created my own game
-            progress tracking and restarting code, and tested with friends. I did not create my own weapons entirely from
-            scratch, though.
-        </p>
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card" data-title="Terror Tower Wars">
+        <img class="card-img" src="" alt="Terror Tower Wars picture">
+        <div class="card-body">
+          <div class="card-text">
+            <h2 class="name">Terror Tower Wars</h2>
+            <p class="short">Doomspire Brickbattle clone</p>
+          </div>
+          <div class="card-meta">
+            <time class="date">6/2/2024</time>
+            <!--<a class="arrow" href="https://www.roblox.com/games/17712262380/" target="_blank" rel="noopener">→</a>-->
+          </div>
+        </div>
+        <div class="full-content">
+            <p>
+                "Doomspire Brickbattle" is a free asset available on Roblox Studio. It is essentially a finished game, and thus
+                many have published the same game under different names that are all essentially copies of Doomspire
+                Brickbattle. I thought it would be good practice for me to do something similar, but I couldn't publish
+                publish someone else's work as my own. I created my own map similar to the Doomspires, created my own game
+                progress tracking and restarting code, and tested with friends. I did not create my own weapons entirely from
+                scratch, though.
+            </p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" data-title="Backrooms PVP">
+        <img class="card-img" src="" alt="Backrooms PVP picture">
+        <div class="card-body">
+          <div class="card-text">
+            <h2 class="name">Backrooms PVP</h2>
+            <p class="short">PVP in the ever-shifting Backrooms</p>
+          </div>
+          <div class="card-meta">
+            <time class="date">6/30/2023</time>
+            <!--https://www.roblox.com/games/13915634054/ -->
+          </div>
+        </div>
+        <div class="full-content">
+            <p>
+                This game obviously takes inspiration from the Backrooms. This was mainly a project to help me learn the
+                programming language, as I created the game entirely from scratch, only using 3D models and 2D art from the
+                Toolbox. For that reason, it isn't a very impressive project. I abandoned it mostly because I realized I
+                couldn't sell any gamepasses to go along with the game without breaking copyright law.
+            </p>
+        </div>
+      </article>
     </div>
-    <!--#endregion-->
-    <!--#region Backrooms PVP-->
-    <h2>
-        <button type="button" onclick="dropToggle('backroomsPvpConent', 'backroomsPvpButtonImage')">
-            <img src="gui/triangle.png" id="backroomsPvpButtonImage" style="width: 10px; transform: rotate(90deg)">
-        </button>
-        <a href="https://www.roblox.com/games/13915634054/ "
-           target="_blank"
-           rel="noopener noreferrer">
-            Backrooms PVP
-        </a>
-    </h2>
-    <div class="shifted" id="backroomsPvpConent" style="display: none;">
-        <strong>June 30, 2023</strong><br>
-        <p>
-            This game obviously takes inspiration from the Backrooms. This was mainly a project to help me learn the
-            programming language, as I created the game entirely from scratch, only using 3D models and 2D art from the
-            Toolbox. For that reason, it isn't a very impressive project. I abandoned it mostly because I realized I
-            couldn't sell any gamepasses to go along with the game without breaking copyright law.
-        </p>
-    </div>
-    <!--#endregion-->
-    <!--#endregion-->
     <!--#region GML-->
     <h1>GML</h1>
     <p>
@@ -310,5 +340,16 @@
     <!--#endregion-->
     <!--#endregion-->
     </main>
+    <!-- Modal template -->
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-panel" role="document">
+        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <div id="modalDesc" class="modal-desc"></div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
