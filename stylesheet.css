@@ -46,10 +46,6 @@
   --grad-overlay-end: var(--overlay-bottom);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -144,7 +140,7 @@ nav ul li a:hover {
   padding: 5px;
   margin: 5px;
 }
-.flex-container div.special-border {
+.special-border {
   border-radius: 12px;
   overflow: hidden;
   transform-origin: center;
