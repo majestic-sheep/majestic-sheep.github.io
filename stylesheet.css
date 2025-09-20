@@ -1,3 +1,55 @@
+:root {
+  /* Base theme colors */
+  --color-bg-dark: #112317;
+  --color-bg-darker: #0a140e;
+  --color-surface: #142218;
+  --color-panel: #1a291e;
+
+  /* Text */
+  --color-text: #e1e8dc;
+  --color-text-muted: #6d7b5a;
+  --color-heading: #cdd8c5;
+
+  /* Accent */
+  --color-accent: #8fae68;
+  --color-accent-alt: #6f8f4f;
+
+  /* Shadows */
+  --shadow-light: rgba(6,12,8,0.6);
+  --shadow-hover: rgba(6,12,8,0.75);
+  --shadow-modal: rgba(6,12,8,0.85);
+
+  /* Overlay */
+  --overlay-top: rgba(0,0,0,0.55);
+  --overlay-bottom: rgba(10,20,14,0.6);
+
+  /* Borders */
+  --border-light: rgba(143,174,104,0.25);
+
+  /* Gradient stops */
+  --grad-bg-start: var(--color-bg-dark);
+  --grad-bg-end: var(--color-bg-darker);
+
+  --grad-card-start: rgba(143,174,104,0.05);
+  --grad-card-end: rgba(0,0,0,0.08);
+
+  --grad-card-start-special: rgba(121, 219, 0, 0.511);
+  --grad-card-end-special: rgba(133, 171, 86, 0.186);
+
+  --grad-arrow-start: var(--color-accent);
+  --grad-arrow-end: var(--color-accent-alt);
+
+  --grad-modal-start: rgba(142, 174, 104, 0.227);
+  --grad-modal-end: rgba(0,0,0,0.08);
+
+  --grad-overlay-start: var(--overlay-top);
+  --grad-overlay-end: var(--overlay-bottom);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -92,7 +144,7 @@ nav ul li a:hover {
   padding: 5px;
   margin: 5px;
 }
-.special-border {
+.flex-container div.special-border {
   border-radius: 12px;
   overflow: hidden;
   transform-origin: center;
