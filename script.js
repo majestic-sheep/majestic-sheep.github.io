@@ -6,21 +6,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalTitle = document.getElementById('modalTitle');
   const modalDesc = document.getElementById('modalDesc');
 
-    function openModal(title, htmlContent) {
+  function openModal(title, htmlContent) {
     modalTitle.textContent = title || 'Details';
     modalDesc.innerHTML = htmlContent || '';
     modal.classList.remove('hidden');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open'); // freeze background scroll
     modalClose.focus();
-    }
+  }
 
-    function closeModal() {
+  function closeModal() {
     modal.classList.add('hidden');
     modal.setAttribute('aria-hidden', 'true');
     modalDesc.innerHTML = '';
     document.body.classList.remove('modal-open'); // restore scroll
-    }
+  }
 
   cards.forEach(card => {
     card.addEventListener('click', () => {
@@ -54,15 +54,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-function dropToggle(id, buttonImage) {
-    let ele = document.getElementById(id)
-    let img = document.getElementById(buttonImage)
-    if (ele.style.display === "block") {
-        ele.style.display = "none";
-        img.style.transform = "rotate(90deg)";
-    } else {
-        ele.style.display = "block";
-        img.style.transform = "rotate(180deg)";
-    }
-}
